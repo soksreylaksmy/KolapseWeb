@@ -24,12 +24,8 @@ const navItems: { id: Page; label: string; icon: string }[] = [
 function Logo() {
   return (
     <div className="logoBox">
-  <div className="logoCircle bigLogo">
-    <img src={logo} alt="logo" className="logoImg" />
-  </div>
-
-  <h2 className="appTitle">Monitoring System</h2>
-</div>
+      <img src={logo} alt="Logo" className="sidebarLogoImg" />
+    </div>
   );
 }
 
@@ -575,7 +571,7 @@ function AlertHistoryPage({ setPage }: { setPage: (page: Page) => void }) {
         setPage={setPage}
       />
 
-<div className="statsGrid three">
+<div className="statsGrid three alertStatsGrid">
   <StatCard
     icon="warning"
     title="Total Alerts"
