@@ -247,8 +247,7 @@ function ActivitySummary() {
   );
 }
 
-function ActivityMonitorCard({ large = false }: { large?: boolean }) {
-  return (
+function ActivityMonitorCard() {  return (
     <section className="card">
       <div className="cardHeader">
         <div>
@@ -428,7 +427,7 @@ function ActivityPage({ setPage }: { setPage: (page: Page) => void }) {
       />
 
       <div className="widePage">
-        <ActivityMonitorCard large />
+      <ActivityMonitorCard />
         <TimelineCard />
       </div>
     </>
